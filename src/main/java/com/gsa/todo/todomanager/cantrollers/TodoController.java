@@ -97,7 +97,7 @@ public class TodoController {
 //    public String nullPointerException(Exception ex){
 //        System.out.println(ex.getMessage());
 //        System.out.println("Null Pointer Exception Generated");
-//        return "Null Pointer Exception" +ex.getMessage();
+// //       return "Null Pointer Exception" +ex.getMessage();
 //
 //    }
 }
