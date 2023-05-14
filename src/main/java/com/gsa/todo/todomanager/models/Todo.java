@@ -1,14 +1,27 @@
 package com.gsa.todo.todomanager.models;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 import java.util.Date;
 
+@Entity
+@Table(name = "jpa_todos")
 public class Todo {
+    @Id
     private int id;
-
+   @Column(name = "todo_title",length = 100)
     private String title;
+    @Column(name = "todo_content",length = 1000)
     private String content;
+
+    @Column(name = "todo_status",length = 10)
     private String status;
+    @Column(name = "todo_added_date")
     private Date addedDate;                         // @JsonFormat(pattern="ss/MM/yyy") we can do how we want
+    @Column(name = "todo_todo_date")
     private Date toDoDate;
 
 

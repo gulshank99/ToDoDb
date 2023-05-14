@@ -21,7 +21,6 @@ public class TodoController {
 
     Logger logger=LoggerFactory.getLogger(TodoController.class);
 
-
     @Autowired
     private TodoService todoService;    // Changed TodoServiceImpl to his parent TodoService
     Random random=new Random();
@@ -34,13 +33,10 @@ public class TodoController {
        //  String str=null;
       //   logger.info("{}",str.length());
      //    Integer.parseInt("kdwfni2");
-
-
-
         int id =random.nextInt(99999);
          todo.setId(id);
-         // Create Date with Sysytem Default
-        Date currentDate = new Date();
+
+        Date currentDate = new Date();               // Create Date with Sysytem Default
         logger.info("Current Date : {}",currentDate);
         todo.setAddedDate(currentDate);
 

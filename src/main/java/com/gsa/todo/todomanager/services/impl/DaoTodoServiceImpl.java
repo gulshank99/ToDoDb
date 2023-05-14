@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.text.ParseException;
 import java.util.List;
 @Service
-@Primary
+//@Primary
 public class DaoTodoServiceImpl implements TodoService {
     @Autowired
     private TodoDao todoDao;
